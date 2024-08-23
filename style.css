@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #8E6C88;
+}
+header{
+    background-color: #330036;
+    align-items: center;
+    padding: 20px;
+}
+header li{
+    display: inline;
+    margin: 0 0 0 15px; 
+    padding: 20px 20px 30px 30px;
+    color: #f8f8f8;
+}
+h1{
+    color: #330036;
+    font-size: 100px;
+    padding: 30px;
+}
+.sobre{
+color: #f8f8f8;
+padding: 40px;
+}
+
+footer{
+    background-color: #000000;
+    padding: 30px;
+}
+footer p{
+    color: #f8f8f8;
+}
