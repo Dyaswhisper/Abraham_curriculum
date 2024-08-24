@@ -11,23 +11,30 @@ header{
     background-color: #330036;
     align-items: center;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 header li{
-    display: inline;
-    margin: 0 0 0 15px; 
+    display: inline-block;
     padding: 20px 20px 30px 30px;
     color: #f8f8f8;
+}
+nav{
+    
 }
 h1{
     color: #330036;
     font-size: 100px;
     padding: 30px;
 }
-.sobre{
+.sua{
 color: #f8f8f8;
 padding: 40px;
 }
-
+.sud{
+    color: #f8f8f8;
+padding: 40px;
+}
 footer{
     background-color: #000000;
     padding: 30px;
