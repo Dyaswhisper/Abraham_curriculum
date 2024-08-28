@@ -15,7 +15,7 @@ header{
     justify-content: space-between;
 }
 header li{
-    display: inline-block;
+    display: inline-block; /* ahora que desbloquearon todo lo que es flex hay que volar todo lo que tenga inline */
     padding: 20px 20px 30px 30px;
     color: #f8f8f8;
 }
@@ -31,6 +31,7 @@ h1{
 color: #f8f8f8;
 padding: 40px;
 }
+/* si sua y sud tienen exactamente las mismas propiedades lo mejor es declarar sus propiedades una sola vez para ahorrar líneas */
 .sud{
     color: #f8f8f8;
 padding: 40px;
