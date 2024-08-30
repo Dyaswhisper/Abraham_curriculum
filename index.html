@@ -5,92 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TP1_CV/DYA</title>
+    <title>Abraham_Mi primera web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Contact</li>
-                <li>Formación</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Hola!</h1>
-            <div class="sua">
-                <p>Soy Dana, Dan o Danu para amigos y familia. </p>
-            </div>
-            <div class="sud">
-                <p class="re">Soy oriunda de Buenos Aires, Argentina; me encanta dibujar y escuchar musica, me gusta
-                    pensar que esos hobbies son los que impulsaron mi elección acádemica en el nivel universitario.
-                    Disfruto el trabajo en equipo, donde participo activamente en la creación de proyectos, explorando
-                    diversas alternativas y enriqueciendo el trabajo conjunto mediante la investigacion ante los
-                    diferentes problemas que puedan llegar a surgir. En mi proceso de trabajo tengo facilidad para
-                    adaptarme y flexibizar mis habilidades dependiendo el tipo de proyecto que se me brinde.</p>
-            </div>
-        </section>
-        <section class="form">
-            <h2>Formación</h2>
-            <h3>Secundaria EESN°13 (Adrogué)</h3>
-            <p>Bachiller en Economía y administración de empresas | Finalizado en 2019 </p>
-            <p>Itinerario en RRHH (titulo complementario) | Finalizado en 2019</p>
-            <h3>Universidad Nacional de Lanús (UNla)</h3>
-            <p>cursando materias de cuarto y quinto año</p>
-        </section>
-        <section class="expe">
-            <h3>Experiencia</h3>
-            <p>En mi camino institucional, he incorporado y profundizado mis conocimientos de Branding, Diseño
-                Editorial. Proximamente espero incorporar más conocimientos y herramientas. </p>
-            <p>Mi enfoque en el diseño es versatil y experimental. No me aferro a un estilo en particular, ya que
-                disfruto de explorar diferentes enfoques y técnicas en el desarrollo de un proyecto. Siempre conservando
-                objetividad del mismo, adaptando mis ideas a las necesidades y expectativas del publico receptor y/o
-                clientes.</p>
-        </section>
-        <section class="proy">
-            <h3>Proyectos</h3>
-            <!-- acá revisá la clase de las etiquetas <a> / La vi! lo puse como texto porque tengo que arreglar algunas de mis redes-->
-        </section>
-        <section class="hab">
-            <h3>Habilidades técnicas</h3>
-            <nav>
+        <div><!--no se activan las propiedades, ya intente ponerle claifica-->
+            <nav class="botonera">
                 <ul>
-                    <li>Manejo de Illustrator</li>
-                    <li>Manejo de Photoshop</li>
-                    <li>Manejo de Indesign</li>
-                    <li>Manejo de Figma</li>
-                    <li>Manejo de lenguaje de programación</li>
-                    <li>Manejo de After Effects</li>
-                    <li>Manejo de Premiere</li>
+                    <img src="img/download.jpeg" alt="" width="100px" height="100px">
+                    <!--aca va el logo, PARA QUE QUEDE EN LA BARRA DE NAVEGACION-->
+                    <li><a href="#sobremi">About me</a></li>
+                    <li><a href="#formacion">Formación</a></li>
+                    <li><a href="#proyectos">Works</a></li>
+                    <li><a href="#links">Contact</a></li>
                 </ul>
             </nav>
-            <h3>Idiomas</h3>
-            <nav class="idiomas">
+        </div>
+    </header>
+    <main>
+        <section class="bienvenidos">
+            <h1>Hola!</h1>
+            <h2>Soy Dana, Dan o Danu</h2>
+            <p>¡Bienvenidos a mí primera página web!</p>
+        </section>
+        <section id="sobremi">
+            <img src="/img/fotoperfil.png" alt="fotoperfil">
+            <div class="caja">
+                <h2>Sobre mi</h2>
+                <p>Soy de Buenos Aires, Argentina; me encanta dibujar y escuchar musica, me gusta pensar que
+                    esos hobbies son los que impulsaron mi elección acádemica en el nivel universitario. Disfruto el
+                    trabajo en equipo, donde participo activamente en la creación de proyectos, explorando diversas
+                    alternativas y enriqueciendo el trabajo conjunto mediante la investigacion ante los diferentes
+                    problemas que puedan llegar a surgir. En mi proceso de trabajo tengo facilidad para adaptarme y
+                    flexibizar mis habilidades dependiendo el tipo de proyecto que se me brinde.
+                </p>
+            </div>
+        </section>
+        <section id="formacion">
+            <div>
+                <div>
+                    <h2>Formación</h2>
+                    <h3>Secundaria EESN°13</h3>
+                    <nav>
+                        <ul>
+                            <li>Bachiller en Economía y administración de empresas</li>
+                            <li>Finalizado en 2019</li>
+                            <li>Itinerario en RRHH (titulo complementario)</li>
+                            <li>Finalizado en 2019</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <h3>Universidad Nacional de Lanús</h3>
+                    <ul>
+                        <li>cursando materias de cuarto y quinto año</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="idiomas">
+                <h2>Idiomas</h2>
                 <ul>
                     <li>Español - Nivel Nativo</li>
                     <li>Inglés - Nivel Básico</li>
                     <li>Francés - Nivel Inicial</li>
                     <li>Italiano - Nivel Inicial</li>
                 </ul>
-            </nav>
+            </div>
         </section>
-        <section class="links">
-            <nav>
+        <section id="experiencia">
+            <div>
+                <h2>Experiencia</h2>
+                <p>En mi camino institucional, he incorporado y profundizado mis conocimientos de Branding, Diseño
+                    Editorial. Proximamente espero incorporar más conocimientos y herramientas.</p>
+                <p>Mi enfoque en el diseño es versatil y experimental. No me aferro a un estilo en particular, ya que
+                    disfruto de explorar diferentes enfoques y técnicas en el desarrollo de un proyecto. Siempre
+                    conservando
+                    la objetividad del mismo, adaptando mis ideas a las necesidades y expectativas del publico receptor
+                    y/o
+                    clientes.</p>
+            </div>
+        </section>
+        <section id="proyectos">
+            <div>
+                <h2>Proyectos</h2>
+                <p>En el momento, no tengo proyectos para mostrar. Por ahora, solo me presento.</p>
                 <ul>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=IMy99RKM_QU">Ver video</a>
-                    </li>
+                    <li></li>
                 </ul>
-
-            </nav>
+            </div>
+        </section>
+        <section id="habilidades">
+            <div class="list_items">
+                <nav>
+                    <h2>Habilidades técnicas</h2>
+                    <ul>
+                        <li>Manejo de Illustrator</li>
+                        <li>Manejo de Photoshop</li>
+                        <li>Manejo de Indesign</li>
+                        <li>Manejo de Figma</li>
+                        <li>Manejo de After Effects</li>
+                        <li>Manejo de Premiere</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section id="links">
+            <div class="enlaces">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.behance.net/danaabraham1">BEHANCE</a></li>
+                        <li><a href="https://www.instagram.com/danuabraham?igsh=bjRmYTBtazdrdHgw">INSTAGRAM</a></li>
+                        <!--<li><a href="">TWITTER</a></li><li><a href="">LINKEDIN</a></li>-->
+                    </ul>
+                </nav>
+            </div>
         </section>
     </main>
     <footer>
-        <p>copyright</p>
+        <p>©2024 Abraham Dana Yael. Todos los derechos reservados.</p>
     </footer>
 </body>
 
