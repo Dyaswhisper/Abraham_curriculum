@@ -35,6 +35,7 @@ header {
     padding: 10px;
 
 }
+
 /* PADDING: se necesita para que se separen los items, poner header ul o botonera ul es lo mismo*/
 
 .botonera a {
@@ -55,7 +56,8 @@ header {
 }
 
 /*Desde aca es main*/
-main, footer {
+main,
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,20 +83,22 @@ section[id] {
     font-size: 30px;
     width: 100%;
 }
+
 #sobremi {
     background-color: black;
     color: aliceblue;
 }
-.caja{
-    margin-left:7%;
+
+.caja {
+    margin-left: 7%;
 }
 
-h1{
+h1 {
     font-size: 220px;
     color: blueviolet;
 }
 
-.enlaces ul{
+.enlaces ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -102,7 +106,8 @@ h1{
     padding: 10px;
     flex-wrap: wrap;
 }
-.enlaces a{
+
+.enlaces a {
     display: block;
     width: 100%;
     padding: 20px;
