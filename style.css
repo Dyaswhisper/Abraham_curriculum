@@ -20,20 +20,21 @@ body {
 header {
     position: fixed;
     width: 100%;
-    left: 0;
-    top: 0;
+    left: 0; /* se va */
+    top: 0; /* se va */
+    /* falta el background color, flex, */
 }
 
 .botonera ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* se va */
     /*esto hace que header este horizontal*/
-    background-color: black;
+    background-color: black; /* se va, se aplica desde header directamente*/
     /*probar sustituir por fondo animado (no me borren los comentarios, please)*/
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-
+    /* falta ancho al 100% y un max-width, también hay que sacar la img de acá así queda agrupado los botones por un lado y la img por otro, y separar con gap */
 }
 
 /* PADDING: se necesita para que se separen los items, poner header ul o botonera ul es lo mismo*/
@@ -61,7 +62,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 8%;
+    margin-top: 8%; /* no usar altos con %, mejor un padding con la altura fija del header */
 }
 
 section[id] {
@@ -69,19 +70,19 @@ section[id] {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20%;
+    padding: 20%; /* no se centra con padding!! acá mejor un alto con vh */
     width: 100%;
 }
 
 .bienvenidos {
-    padding-top: 15%;
-    padding: 10%;
+    padding-top: 15%; /* nao nao, capaz acá es donde va el tamaño del header, o directamente en todas las sections así se calcula cuando se uan los links  */
+    padding: 10%; /* se va */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    width: 100%;
+    width: 100%; /* esto ya está definido en las sections, no repitas */
 }
 
 #sobremi {
@@ -90,7 +91,7 @@ section[id] {
 }
 
 .caja {
-    margin-left: 7%;
+    margin-left: 7%; /* mejor un gap en el padre */
 }
 
 h1 {
