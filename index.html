@@ -1,39 +1,31 @@
+-
 <!DOCTYPE html>
-<html lang="en"> <!-- idioma inglés? -->
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- esto todavía no! -->
     <link rel="stylesheet" href="style.css">
     <title>Abraham_Mi primera web</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div><!--no se activan las propiedades, ya intente ponerle claifica--> <!-- quitar div -->
-            <nav class="botonera">
-                <ul>
-                    <img src="img/download.jpeg" alt="" width="100px" height="100px"> <!-- acordate de cambiar el nombre de la carpeta de imágenes!! -->
-                    <!--aca va el logo, PARA QUE QUEDE EN LA BARRA DE NAVEGACION-->
-                    <li><a href="#sobremi">About me</a></li> <!-- fijate de probar sin ul, directamente las a dentro del nav -->
-                    <li><a href="#formacion">Formación</a></li>
-                    <li><a href="#proyectos">Works</a></li>
-                    <li><a href="#links">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="botonera">
+            <img src="img/main/download.jpeg" alt="" width="100px" height="100px">
+            <a href="#sobremi">About me</a> <!-- fijate de probar sin ul, directamente las a dentro del nav -->
+            <a href="#formacion">Formación</a>
+            <a href="#proyectos">Works</a>
+            <a href="#links">Contact</a>
+        </nav>
     </header>
     <main>
-        <section class="bienvenidos">
+        <section id="bienvenidos">
             <h1>Hola!</h1>
             <h2>Soy Dana, Dan o Danu</h2>
             <p>¡Bienvenidos a mí primera página web!</p>
         </section>
         <section id="sobremi">
-            <img src="img/main/fotoperfil.jpg" alt="fotoperfil">
+            <img src="img/main/fotoperfil.jpg" alt="fotoperfil" width="500px" height="500px">
             <div class="caja">
                 <h2>Sobre mi</h2>
                 <p>Soy de Buenos Aires, Argentina; me encanta dibujar y escuchar musica, me gusta pensar que
@@ -47,28 +39,28 @@
         </section>
         <section id="formacion">
             <div>
-                <div> <!-- para evitar tanto div podrías utilizar una ul con dos li que serían secundario y universidad, y adentrro de los li podrías seguir haciendo mini estructuras de ul o sencillamente unas p -->
-                    <h2>Formación</h2>
-                    <h3>Secundaria EESN°13</h3>
-                    <nav>
+                <h2>Formación</h2>
+                <ul class="educacion">
+                    <li>
+                        <h3>Secundaria EESN°13</h3>
                         <ul>
                             <li>Bachiller en Economía y administración de empresas</li>
                             <li>Finalizado en 2019</li>
                             <li>Itinerario en RRHH (titulo complementario)</li>
                             <li>Finalizado en 2019</li>
                         </ul>
-                    </nav>
-                </div>
-                <div>
-                    <h3>Universidad Nacional de Lanús</h3>
-                    <ul>
-                        <li>cursando materias de cuarto y quinto año</li>
-                    </ul>
-                </div>
+                    </li>
+                    <li>
+                        <h3>Universidad Nacional de Lanús</h3>
+                        <ul>
+                            <li>cursando materias de cuarto y quinto año</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div class="idiomas">
+            <div>
                 <h2>Idiomas</h2>
-                <ul>
+                <ul class="idiomas">
                     <li>Español - Nivel Nativo</li>
                     <li>Inglés - Nivel Básico</li>
                     <li>Francés - Nivel Inicial</li>
@@ -77,46 +69,50 @@
             </div>
         </section>
         <section id="experiencia">
-            <div>
+            <article>
                 <h2>Experiencia</h2>
                 <p>En mi camino institucional, he incorporado y profundizado mis conocimientos de Branding, Diseño
                     Editorial. Proximamente espero incorporar más conocimientos y herramientas.</p>
                 <p>Mi enfoque en el diseño es versatil y experimental. No me aferro a un estilo en particular, ya que
-                    disfruto de explorar diferentes enfoques y técnicas en el desarrollo de un proyecto. Siempre
-                    conservando
-                    la objetividad del mismo, adaptando mis ideas a las necesidades y expectativas del publico receptor
+                    disfruto de explorar diferentes enfoques y técnicas en el desarrollo de un proyecto, siempre
+                    conservando la objetividad del mismo, adaptando mis ideas a las necesidades y expectativas del
+                    publico receptor
                     y/o clientes.</p>
-            </div>
+            </article>
+
         </section>
         <section id="proyectos">
             <div>
                 <h2>Proyectos</h2>
-                <p>En el momento, no tengo proyectos para mostrar. Por ahora, solo me presento.</p> <!-- acá podrías mostrar tps de la facu y empezar a poner fotos -->
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
+                <p>En el momento, no tengo proyectos para mostrar. Por ahora, solo me presento.</p>
+                <!-- acá podrías mostrar tps de la facu y empezar a poner fotos -->
+
+                <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="" width="200px"
+                    height="200px">
+                <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="" width="200px"
+                    height="200px">
+                <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="" width="200px"
+                    height="200px">
+                <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="" width="200px"
+                    height="200px">
         </section>
         <section id="habilidades">
-            <div class="list_items"> <!-- controversial poner una class con un nombre parecido a una etiqueta ya existente -->
-                <nav> <!-- controversial el uso de un nav en una parte donde no hay navegación -->
-                    <h2>Habilidades técnicas</h2>
-                    <ul>
-                        <li>Manejo de Illustrator</li>
-                        <li>Manejo de Photoshop</li>
-                        <li>Manejo de Indesign</li>
-                        <li>Manejo de Figma</li>
-                        <li>Manejo de After Effects</li>
-                        <li>Manejo de Premiere</li>
-                    </ul>
-                </nav>
-            </div>
+            <h2>Habilidades técnicas</h2>
+            <ul>
+                <li>Manejo de Illustrator</li>
+                <li>Manejo de Photoshop</li>
+                <li>Manejo de Indesign</li>
+                <li>Manejo de Figma</li>
+                <li>Manejo de After Effects</li>
+                <li>Manejo de Premiere</li>
+            </ul>
         </section>
-        <section id="links">
+        <section>
             <div class="enlaces">
-                <nav> 
+                <nav>
                     <ul> <!-- dejar los enlaces sin ul/lu -->
-                        <li><a href="https://www.behance.net/danaabraham1">BEHANCE</a></li> <!-- agregar el target blank -->
+                        <li><a href="https://www.behance.net/danaabraham1">BEHANCE</a></li>
+                        <!-- agregar el target blank -->
                         <li><a href="https://www.instagram.com/danuabraham?igsh=bjRmYTBtazdrdHgw">INSTAGRAM</a></li>
                         <!--<li><a href="">TWITTER</a></li><li><a href="">LINKEDIN</a></li>-->
                     </ul>
@@ -124,7 +120,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="links"> <!-- Preguntar si se puede hacer-->
         <p>©2024 Abraham Dana Yael. Todos los derechos reservados.</p>
     </footer>
 </body>
