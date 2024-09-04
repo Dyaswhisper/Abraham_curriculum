@@ -9,25 +9,27 @@
     text-decoration: none;
     list-style: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
     display: flex;
-    flex-direction: column; /*Si esto desaparece mi footer*/
+    flex-direction: column;
+    /*Si esto desaparece mi footer*/
     font-family: "poppins", sans-serif;
 }
 
 /*Desde aca es Header*/
 header {
-/*(PROBAR INCORPORAR PARA ACHICAR EL NAVEGADOR)*/
+    /*(PROBAR INCORPORAR PARA ACHICAR EL NAVEGADOR)*/
     width: 100%;
     background-color: black;
-padding: 10px;
+    padding: 10px;
 }
 
-.botonera{
+.botonera {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,7 +53,7 @@ padding: 10px;
 
 section[id] {
     height: 100vh;
-    padding:30px;
+    padding: 30px;
 }
 
 /*Desde aca es bienvenida*/
@@ -67,6 +69,7 @@ h1 {
     align-items: center;
     font-size: 30px;
 }
+
 /*Desde aca es sobre mi*/
 #sobremi {
     color: aliceblue;
@@ -80,6 +83,7 @@ h1 {
 .caja {
     max-width: 25%;
 }
+
 /*Desde aca es formación*/
 #formacion {
     color: aliceblue;
@@ -91,16 +95,17 @@ h1 {
     gap: 30px;
 }
 
-.educacion, .idiomas{
+.educacion,
+.idiomas {
     display: flex;
     flex-direction: row;
     gap: 35px;
 
 }
-/*Desde aca es experiencia*/
-#experiencia {
 
-}
+/*Desde aca es experiencia*/
+#experiencia {}
+
 /*Desde aca es proyectos*/
 
 /*Desde aca es habilidades*/
