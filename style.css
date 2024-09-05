@@ -3,15 +3,13 @@
 @import url();
 
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
-
-html {
-    scroll-behavior: smooth;
+    cursor: url(img/png_11621759.png), auto;
 }
 
 body {
@@ -19,10 +17,12 @@ body {
     flex-direction: column;
     /*Si esto desaparece mi footer*/
     font-family: "poppins", sans-serif;
+    animation: lucy 2s linear infinite;
 }
 
 /*Desde aca es Header*/
 header {
+    position: fixed;
     /*(PROBAR INCORPORAR PARA ACHICAR EL NAVEGADOR)*/
     width: 100%;
     background-color: black;
@@ -66,6 +66,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /*parece que no hace nada en inspector pero evita que el contenido choque con el header*/
     align-items: center;
     font-size: 30px;
 }
@@ -81,7 +82,7 @@ h1 {
 }
 
 .caja {
-    max-width: 25%;
+    max-width: 500px;
 }
 
 /*Desde aca es formación*/
@@ -91,109 +92,163 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(194, 27, 27);
-    gap: 30px;
+    background-color: blueviolet;
+    gap: 50px;
 }
 
 .educacion,
 .idiomas {
     display: flex;
-    flex-direction: row;
     gap: 35px;
-
+    max-width: 500px;
+    word-wrap: break-word;
 }
 
+.educacion iframe {
+    gap: 50p;
+    border-radius: 100%;
+}
+
+/*Desde aca es formación*/
 /*Desde aca es experiencia*/
-#experiencia {}
+#aptitudes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 
-/*Desde aca es proyectos*/
-
+}
+#aptitudes article{
+    max-width: 700px;
+align-items: center;
+}
 /*Desde aca es habilidades*/
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.programas {
+    display: flex;
+    gap: 50px;
+    max-width: 700px;
+}
+
+/*Desde aca es proyectos (ARREGLAR)*/
+#proyectos {
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+.slider-images{
+    display: flex;
+    gap:50px;
+    align-items: center;
+    justify-content: center;
+}
+/*
+.slider-images{
+display: flex;
+align-items: center;
+gap: 21px;
+}
+.slider-images img{
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+border-radius: 6px;
+}
+.slider-img{
+    width:110px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+}
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+    height: 480px;
+}
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+    height: 560px;
+}
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4){
+    height: 665px;
+}
+
+#proyectos h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: rotate(270deg);
+    transition: 0.7s ease;
+}
+.slider-detalle{
+position: absolute;
+bottom: 43px;
+left:43px;
+text-align: left;
+font-weight: 700;
+}
+
+.galeria{
+width: 100%;
+height: 100%;
+object-fit: cover;}
+
+.galeria-img{
+border-radius: 6px;
+cursor:pointer;
+position: relative;
+transition: 0.7s ease;
+}
+.galeria .galeria-img:first-child, .galeria .galeria-img:last-child{
+    height: 480px;
+}
+.galeria-img:nth-child(2), .galeria .galeria-img:nth-child(6){
+    height: 560px;
+}
+.galeria-img:first-child(3), .galeria .galeria:last-child(4){
+    height: 665px; ;
+}
+
+    /*APLICAR EFECTO de yt*
+    max-width: 1366px;
+    gap: 40px;
+    padding: 50px;
+    margin-top: 100px;
+    column-gap: 40px;
+
+.galeria img {
+    border-radius: 25px;
+    gap: 40px;
+}
+
+.galeria img:hover {
+    transform: scale(1.2);}*/
 
 /*Desde aca es contacto*/
 
 /*Desde aca es footer*/
 
-
-
-/*@media screen and (max-width: 768px) {
-    .botonera ul {
-        display: block;
-        justify-content: space-around;
-        align-items: center;
-        
-    
-    }    
-    .botonera a {
-        display: block;
-        width: 100%;
-        padding: 20px;
-        background-color: none;
-        color: rgb(255, 255, 255);
-        border-radius: 40px;
-        font-family: "new amsterdam", sans-serif;
-        font-size: 20px;
-        transition: all 0.3s linear;
-    }
-    .botonera a:hover {
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-    }
-
-    main, footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    section[id] {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20%;
-        width: 100%;
-    }
-    
-    .bienvenidos {
-        padding-top: 15%;
-        padding: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        width: 100%;
-    }
-    #sobremi {
-        background-color: black;
-        color: aliceblue;
-    
-    }
-    h1{
-        font-size: 220px;
-        color: blueviolet;
-    }
-    .enlaces ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-        flex-wrap: wrap;
-    }
-    .enlaces a{
-        display: block;
-        width: 100%;
-        padding: 20px;
-        background-color: black;
-        color: rgb(255, 255, 255);
-        border-radius: 40px;
-        font-family: "new amsterdam", sans-serif;
-        font-size: 30px;
-        margin: 0 auto;
-        transition: all 0.3s linear;
-    }
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
 }
-/*aca es max-width se define a partir de donde se "deforma" la pagina en la prueba responsive*/
-/*Desde aca es footer*/
+footer a{
+    color: aliceblue;
+}
+
+/*hasta aca es footer*/
