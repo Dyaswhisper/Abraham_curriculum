@@ -1,6 +1,8 @@
+/* acá falta algo fundamental del archivo que dimos en la clase de css */
+
 @import url();
 @import url();
-@import url();
+@import url(); /* no dejes cosas vacías */
 
 * {
     scroll-behavior: smooth;
@@ -9,15 +11,15 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    cursor: url(img/png_11621759.png), auto;
-}
+    cursor: url(img/png_11621759.png), auto /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
+} 
 
 body {
     display: flex;
     flex-direction: column;
-    /*Si esto desaparece mi footer*/
+    /*Si esto desaparece mi footer*/ /* fijate subirlo sin flex porque yo se lo saco y no me afecta en nada, no lo veas desde tu pc sino desde github pages directo */
     font-family: "poppins", sans-serif;
-    animation: lucy 2s linear infinite;
+    animation: lucy 2s linear infinite; /* esta animación acá creo que no está hceindo nada */
 }
 
 /*Desde aca es Header*/
@@ -121,7 +123,7 @@ h1 {
 }
 #aptitudes article{
     max-width: 700px;
-align-items: center;
+align-items: center; /* este align no está funcionando porque no hay flex */
 }
 /*Desde aca es habilidades*/
 .habilidades {
@@ -140,7 +142,7 @@ align-items: center;
 #proyectos {
     width: 100%;
     height: 100vh;
-    background-color: blueviolet;
+    background-color: blueviolet; /* googlea sobre la propiedad de overflow para hacer un scroll pero tratá de enfocarte primero en el resultado sin animaciones complejas de galería, con que utilices flex-wrap para que las imágnes bajen alcanza, ya vas a tener el tp3 para ponerle cosas más flasheras ;) */
 }
 .slider-images{
     display: flex;
@@ -243,7 +245,7 @@ footer{
     align-items: center;
     background-color: rgb(0, 0, 0);
     color: aliceblue;
-    width: 100%;
+    width: 100%; /* parece que si sacamos esto sigue andando todo bien */
     height: 150px;
     padding: 20px;
 }
