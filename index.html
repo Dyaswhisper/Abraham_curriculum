@@ -5,29 +5,29 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Abraham-Mi primera web</title>
+    <link rel="icon" href="img/Recurso-44.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <nav class="botonera">
-            <img src="img/main/download.jpeg" alt="" width="100px" height="50px">
-            <a href="#sobremi">About me</a>
-            <a href="#formacion">Formación</a>
-            <a href="#proyectos">Works</a>
-            <a href="#links">Contact</a>
-            <a href="#bienvenidos"><img src="img/png_11621759.png" alt=""></a> <!-- es rara la utilización de esta img para el inicio porque dentro de los parámetros esperados el que debería hacer esta acción de volver arriba debería ser la primera img, por la costumbre de ver los logos a la izquierda que vuelven a la home. Creo que no traería confusiones si la primer img no existiera -->
-        </nav> 
+            <img src="img/iconos/Recurso 27.png" alt="logo" width="100px" height="50px">
+            <a href="#sobremi">Sobre mí</a>
+            <a href="#formacion">Educación</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#links">Contacto</a>
+        </nav>
     </header>
     <main>
         <section id="bienvenidos">
-            <h1>Hola!</h1> <!-- este h1 está mal utilizado, está bien que sea el único h1 porque es tu título de la pag pero también sirve para los buscadores, o sea que acá debería aparecer algo particular de tu pag porque si en google ponemos "hola" van a aparecer millones de resultados, pero con tu nombre eso no pasa. No hace falta que el h1 sea lo más grande ni lo primero que aparezca en el tp porque se modifica en css -->
-            <h2>Soy Dana, Dan o Danu</h2>
+            <h2>Hola!</h2>
+            <h1>Soy Dana, Dan o Danu</h1>
             <p>¡Bienvenidos a mí primera página web!</p>
         </section>
         <section id="sobremi">
-            <img src="img/main/fotoperfil.jpg" alt="fotoperfil" width="500px" height="500px">
-            <div class="caja">
-                <h2>Sobre mi</h2>
+            <h3>Sobre mí</h3>
+            <article class="caja">
+                <img src="img/fotoperfil.jpg" alt="fotoperfil" width="300px" height="300px">
                 <p>Soy de Buenos Aires, Argentina; me encanta dibujar y escuchar musica, me gusta pensar que
                     esos hobbies son los que impulsaron mi elección acádemica en el nivel universitario. Disfruto el
                     trabajo en equipo, donde participo activamente en la creación de proyectos, explorando diversas
@@ -35,13 +35,15 @@
                     problemas que puedan llegar a surgir. En mi proceso de trabajo tengo facilidad para adaptarme y
                     flexibizar mis habilidades dependiendo el tipo de proyecto que se me brinde.
                 </p>
-            </div>
+            </article>
+
+
         </section>
         <section id="formacion">
-            <h2>Formación</h2>
+            <h3>Formación</h3>
             <ul class="educacion">
                 <li>
-                    <h3>Secundaria EESN°13</h3>
+                    <h4>Secundaria EESN°13</h4>
                     <ul>
                         <li>Bachiller en Economía y administración de empresas</li>
                         <li>Finalizado en 2019</li>
@@ -50,118 +52,82 @@
                     </ul>
                 </li>
                 <li>
-                    <h3>Universidad Nacional de Lanús</h3>
+                    <h4>Universidad Nacional de Lanús</h4>
                     <ul>
                         <li>cursando materias de cuarto y quinto año</li>
                     </ul>
                 </li>
             </ul>
 
-            <h2>Idiomas</h2>
-            <ul class="idiomas">
-                <li>Español / Nivel Nativo</li> <!-- no suele ponerse nivel junto a nativo -->
-                <li>Inglés / Nivel Básico</li>
-                <li>Francés / Nivel Inicial</li>
-                <li>Italiano / Nivel Inicial</li>
+            <h4>Idiomas</h4>
+            <ul class="educacion">
+                <li>Español / Nativo</li>
+                <li>Inglés / Básico</li>
+                <li>Francés / Inicial</li>
+                <li>Italiano / Inicial</li>
             </ul>
         </section>
         <section id="aptitudes">
-            <article>
-                <h2>Experiencia</h2>
-                <p>En mi camino institucional, he incorporado y profundizado mis conocimientos de Branding, Diseño
-                    Editorial. Proximamente espero incorporar más conocimientos y herramientas.</p>
-                <p>Mi enfoque en el diseño es versatil y experimental. No me aferro a un estilo en particular, ya que
-                    disfruto de explorar diferentes enfoques y técnicas en el desarrollo de un proyecto, siempre
-                    conservando la objetividad del mismo, adaptando mis ideas a las necesidades y expectativas del
-                    publico receptor
-                    y/o clientes.</p>
-            </article>
-            <div class="habilidades">
-                <h2>Habilidades técnicas</h2>
-                <ul class="programas">
-                    <li>Manejo de Illustrator</li>
-                    <li>Manejo de Photoshop</li>
-                    <li>Manejo de Indesign</li>
-                    <li>Manejo de Figma</li>
-                    <li>Manejo de After Effects</li>
-                    <li>Manejo de Premiere</li> <!-- Voy a reemplazarlos con iconos-->
-                </ul>
+            <h3>Experiencia</h3>
+            <div class="separador">
+                <div class="academica">
+                    <h4>Académica</h4>
+                    <p>En mi camino institucional, he incorporado y utilizado conocimientos de Branding, Diseño
+                        Editorial, entre otros; espero incorporar más conocimientos y herramientas de diversas materias.
+                    </p>
+                    <p>Mi enfoque en el diseño es versatil y experimental. No me aferro a un estilo en particular, ya
+                        que
+                        disfruto de explorar diferentes enfoques y técnicas en el desarrollo de un proyecto, siempre
+                        conservando la objetividad del mismo, adaptando mis ideas a las necesidades y expectativas del
+                        publico receptor y/o clientes.</p>
+                </div>
+                <div class="academica">
+                    <h4>Habilidades técnicas</h4>
+                    <ul class="programas">
+                        <li><img src="img/iconos/Recurso 14.png" alt="illustrator"></li>
+                        <li><img src="img/iconos/apps_blanco y negro.png" alt="photoshop"></li>
+                        <li><img src="img/iconos/Recurso 11.png" alt="indesing"></li>
+                    </ul>
+                </div>
             </div>
+
         </section>
-        <section id="proyectos"> <!-- Estoy probando una animacion / no termine (quiero sintetizarla):(-->
-            <!--<h2>Proyectos</h2>-->
-            <div class="slider-images">
-                <div class="slider-img">
-                    <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="1" width="200px"
-                        height="200px">
-                    <div class="slider-detalle">
-                        <h2>TALLER 3</h2>
-                        <p>2020</p>
-                    </div>
-                </div>
-
-                <div class="slider-img">
-                    <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="2" width="200px"
-                        height="200px">
-                    <div class="slider-detalle">
-                        <h2>TIPOGRAFIA</h2>
-                        <p>2021</p>
-                    </div>
-                </div>
-
-                <div class="slider-img">
-                    <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="3" width="200px"
-                        height="200px">
-                    <div class="slider-detalle">
-                        <h2>COMPU 2</h2>
-                        <p>2022</p>
-                    </div>
-                </div>
-
-                <div class="slider-img">
-                    <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="4" width="200px"
-                        height="200px">
-                    <div class="slider-detalle">
-                        <h2>TIPOGRAFIA 3</h2>
-                        <p>2022</p>
-                    </div>
-                </div>
-
-                <div class="slider-img">
-                    <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="5" width="200px"
-                        height="200px">
-                    <div class="slider-detalle">
-                        <h2>TIPOGRAFIA 2</h2>
-                        <p>2022</p>
-                    </div>
-                </div>
-
-                <div class="slider-img">
-                    <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="6" width="200px"
-                        height="200px">
-                    <div class="slider-detalle">
-                        <h2>TIPOGRAFIA 1</h2>
-                        <p>2022</p>
-                    </div>
-                </div>
-
-                <div class="slider-img">
-                    <img src="img/Stand-Up-Pouch-Packaging-Presentation-Mockup copia.jpg" alt="7" width="200px"
-                        height="200px">
-                    <div class="slider-detalle">
-                        <h2>MEDIOS EXPRESIVOS</h2>
-                        <p>2022</p>
-                    </div>
-                </div>
+        <section id="proyectos">
+            <h3>Proyectos</h3>
+                <ul class="slider-images">
+                    <li class="slider">
+                        <img src="img/ojo DANA OJO (1).jpg" alt="tp ojo" width="200px"
+                            height="200px">
+                            <h4>COMPUTACIÓN 1</h4>
+                            <p>2020</p>
+                    </li>
+                    <li class="slider">
+                        <img src="img/folleto-02.jpg" alt="tp infografia" width="572px" height="200px">
+                            <h4></a>TIPOGRAFÍA 3</h4>
+                            <p>2022</p>
+                    </li>
+                    <li class="slider">
+                        <img src="img/identidad-visual2.jpg" alt="tp taller" width="200px"
+                            height="200px">
+                            <h4></a>TALLER 3</h4>
+                            <p>2023</p>
+                    </li>
+                </ul>
+</section>
+        <section id="links">
+            <h3>¡Trabajemos Juntxs!</h3>
+            <a class="boton" target="_blank">Enviar propuesta</a>
+            <p>Sigueme en mis redes</p>
+            <div class="redes">
+                <a href="https://www.behance.net/danaabraham1" target="_blank"><img src="img/iconos/Recurso 21.png" alt="logo behance"></a>
+                <a href="https://www.instagram.com/danuabraham?igsh=bjRmYTBtazdrdHgw" target="_blank"><img src="img/iconos/Recurso 24.png" alt="logo instagram"></a>
             </div>
         </section>
     </main>
-    <footer id="links">
-        <p>©2024 Abraham Dana Yael. Todos los derechos reservados.</p>
+    <footer>
         <p>Politica de privacidad</p>
         <p>Terminos y condiciones</p>
-        <a href="https://www.behance.net/danaabraham1" target="_blank">BEHANCE</a>
-        <a href="https://www.instagram.com/danuabraham?igsh=bjRmYTBtazdrdHgw" target="_blank">INSTAGRAM</a>
+        <p>©2024 Dana Yael Abraham. Todos los derechos reservados.</p>
     </footer>
 </body>
 

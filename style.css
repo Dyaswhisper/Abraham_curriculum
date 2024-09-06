@@ -1,9 +1,8 @@
-/* acá falta algo fundamental del archivo que dimos en la clase de css */
+@charset "utf-8";
 
-@import url();
-@import url();
-@import url(); /* no dejes cosas vacías */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Playball&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*Poppins*/
 * {
     scroll-behavior: smooth;
     margin: 0;
@@ -11,21 +10,17 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    cursor: url(img/png_11621759.png), auto /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
-} 
+    cursor: url(img/iconos/Recurso\ 25.png), auto
+        /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
+}
 
 body {
-    display: flex;
-    flex-direction: column;
-    /*Si esto desaparece mi footer*/ /* fijate subirlo sin flex porque yo se lo saco y no me afecta en nada, no lo veas desde tu pc sino desde github pages directo */
     font-family: "poppins", sans-serif;
-    animation: lucy 2s linear infinite; /* esta animación acá creo que no está hceindo nada */
 }
 
 /*Desde aca es Header*/
 header {
     position: fixed;
-    /*(PROBAR INCORPORAR PARA ACHICAR EL NAVEGADOR)*/
     width: 100%;
     background-color: black;
     padding: 10px;
@@ -41,52 +36,70 @@ header {
     padding: 20px;
     color: rgb(255, 255, 255);
     border-radius: 40px;
-    font-family: "new amsterdam", sans-serif;
     font-size: 20px;
     transition: all 0.3s linear;
 }
 
 .botonera a:hover {
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color:blueviolet;
 }
+/*hasta aca es header*/
 
 /*Desde aca es main*/
 
 section[id] {
     height: 100vh;
-    padding: 30px;
+    padding: 50px;
 }
-
+h3{
+    font-size: 40px;
+}
 /*Desde aca es bienvenida*/
-h1 {
-    font-size: 220px;
-    color: blueviolet;
-}
-
 #bienvenidos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*parece que no hace nada en inspector pero evita que el contenido choque con el header*/
+/*parece que no hace nada en inspector pero evita que el contenido choque con el header*/
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 
+h1 {
+    font-size: 50px;
+}
+
+#bienvenidos h2{
+font-size: 220px;
+color: blueviolet;
+}
+#bienvenidos p{
+
+}
+/*hasta aca es bienvenida*/
 /*Desde aca es sobre mi*/
 #sobremi {
     color: aliceblue;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: black;
-    gap: 50px;
+    gap: 30px;
 }
 
 .caja {
-    max-width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
-
+#sobremi img{
+    border-radius:80px 0;
+}
+#sobremi p{
+    max-width: 400px;
+}
+/*hasta aca es sobre mi*/
 /*Desde aca es formación*/
 #formacion {
     color: aliceblue;
@@ -98,20 +111,15 @@ h1 {
     gap: 50px;
 }
 
-.educacion,
-.idiomas {
+.educacion {
     display: flex;
     gap: 35px;
-    max-width: 500px;
     word-wrap: break-word;
 }
-
-.educacion iframe {
-    gap: 50p;
-    border-radius: 100%;
+.educacion li{
+    max-width: 250px;
 }
-
-/*Desde aca es formación*/
+/*hasta aca es formación*/
 /*Desde aca es experiencia*/
 #aptitudes {
     display: flex;
@@ -119,138 +127,95 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 50px;
-
 }
-#aptitudes article{
-    max-width: 700px;
-align-items: center; /* este align no está funcionando porque no hay flex */
-}
-/*Desde aca es habilidades*/
-.habilidades {
+.academica {
+    max-width: 550px;
     display: flex;
     flex-direction: column;
-    gap:50px;
+    align-items: center;
+    gap: 30px;
+}
+
+.separador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 50px;
 }
 
 .programas {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     max-width: 700px;
 }
 
-/*Desde aca es proyectos (ARREGLAR)*/
+/*Desde aca es proyectos*/
 #proyectos {
     width: 100%;
     height: 100vh;
-    background-color: blueviolet; /* googlea sobre la propiedad de overflow para hacer un scroll pero tratá de enfocarte primero en el resultado sin animaciones complejas de galería, con que utilices flex-wrap para que las imágnes bajen alcanza, ya vas a tener el tp3 para ponerle cosas más flasheras ;) */
-}
-.slider-images{
+    padding: 60px;
+    background-color: blueviolet;
     display: flex;
-    gap:50px;
+    flex-direction: column;
+    gap: 50px;
     align-items: center;
     justify-content: center;
 }
-/*
-.slider-images{
-display: flex;
-align-items: center;
-gap: 21px;
-}
-.slider-images img{
-    width: 100%;
-    height: 100%;
-object-fit: cover;
-border-radius: 6px;
-}
-.slider-img{
-    width:110px;
-    border-radius: 6px;
-    cursor: pointer;
-    position: relative;
-    transition: 0.7s ease;
-}
-.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
-    height: 480px;
-}
-.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
-    height: 560px;
-}
-.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4){
-    height: 665px;
-}
-
-#proyectos h2{
-    font-size: 40px;
-    font-weight: 700;
-    text-align: left;
-    text-transform: uppercase;
+#proyectos h3, #proyectos p, #proyectos h4{
     color: aliceblue;
-    position: absolute;
-    top: 50%;
-    left: -10%;
-    transform: rotate(270deg);
-    transition: 0.7s ease;
 }
-.slider-detalle{
-position: absolute;
-bottom: 43px;
-left:43px;
-text-align: left;
-font-weight: 700;
-}
-
-.galeria{
-width: 100%;
-height: 100%;
-object-fit: cover;}
-
-.galeria-img{
-border-radius: 6px;
-cursor:pointer;
-position: relative;
-transition: 0.7s ease;
-}
-.galeria .galeria-img:first-child, .galeria .galeria-img:last-child{
-    height: 480px;
-}
-.galeria-img:nth-child(2), .galeria .galeria-img:nth-child(6){
-    height: 560px;
-}
-.galeria-img:first-child(3), .galeria .galeria:last-child(4){
-    height: 665px; ;
-}
-
-    /*APLICAR EFECTO de yt*
-    max-width: 1366px;
-    gap: 40px;
-    padding: 50px;
-    margin-top: 100px;
-    column-gap: 40px;
-
-.galeria img {
-    border-radius: 25px;
+.slider-images{
+    display: flex;
     gap: 40px;
 }
+.slider{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
 
-.galeria img:hover {
-    transform: scale(1.2);}*/
+.slider-images img{
+    border-radius: 50px 0;
+}
+.slider-images img:hover{
+    border-radius: 0;
+    transform: scale(1.5);
+}
 
 /*Desde aca es contacto*/
+#links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#links h3{
+    font-size: 100px;
+    color: blueviolet;
+}
+.boton{
+    background-color: blueviolet;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 40px;
+}
+.redes{
+    gap: 100px;
+}
+.redes a{
 
+}
 /*Desde aca es footer*/
 
-footer{
+footer {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     background-color: rgb(0, 0, 0);
     color: aliceblue;
-    width: 100%; /* parece que si sacamos esto sigue andando todo bien */
-    height: 150px;
-    padding: 20px;
+    padding: 10px;
 }
-footer a{
-    color: aliceblue;
-}
+
 
 /*hasta aca es footer*/
