@@ -67,14 +67,12 @@ h3{
 
 h1 {
     font-size: 50px;
+    text-decoration: solid;
 }
 
 #bienvenidos h2{
 font-size: 220px;
 color: blueviolet;
-}
-#bienvenidos p{
-
 }
 /*hasta aca es bienvenida*/
 /*Desde aca es sobre mi*/
@@ -190,6 +188,7 @@ gap: 10px;
     align-items: center;
     justify-content: center;
     gap: 40px;
+
 }
 #links h3{
     font-size: 100px;
@@ -204,9 +203,6 @@ gap: 10px;
 .redes{
     gap: 100px;
 }
-.redes a{
-
-}
 /*Desde aca es footer*/
 
 footer {
@@ -216,6 +212,59 @@ footer {
     color: aliceblue;
     padding: 10px;
 }
-
-
 /*hasta aca es footer*/
+
+/**************************************************************************************************************/
+/* Desde aca los nuevos cambios*/
+
+/*FORMULARIO*/
+.formulario-contacto{
+    display: flex;
+    color: blueviolet;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    gap: 25px;
+}
+.datos-personales{
+    display: flex;
+    flex-direction: column;
+    
+}
+.mmoodboard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reunion{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja{
+
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.archivos-carga{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    padding: 10px;
+    height: 200px;
+}
+.envio{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Recurso-44.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="formulario-contacto">
+        <img src="img/" alt="animacion de Contacto">
+        <div>
+            <form method="post"
+                action="mailto:dana.abraham.oficial@gmail.com.ar?subject='Email enviado desde el portfolio'"
+                target="_blank" enctype="multipart/form-data">
+                <div class="datos-personales">
+                    <label for="nombre">* Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <label for="apellido">* Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    <!--Preguntar si es importantate agregar label-->
+                    <div class="contacto">
+                        <label for="e-mail">* E.mail</label>
+                        <input type="email" name="e-mail" id="email" placeholder="Correo Electronico" required>
+                        <label for="codigo de area">Codigo de area</label>
+                        <input type="tel" name="cod. de area" id="area" placeholder="011" required>
+                        <label for="telefono">Número</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="00000000" required>
+                        <!--Investigar un poco mas sobre como agregar telefono a form-->
+                    </div>
+                </div>
+
+                <div class="reunion">
+                    <label for="agenda">Fecha de reunion</label>
+                    <input type="date" name="agenda" id="agenda" required>
+                    <div class="disponibilidad">
+                        <label><input type="radio" name="horario" value="tm" id="tm">TM - 10 a 12 hs</label>
+                        <label><input type="radio" name="horario" value="tt" id="tt">TT - 14 a 18hs</label>
+                        <label><input type="radio" name="horario" value="tn" id="tn">TN - 18 a 22 hs</label>
+                        <label><input type="radio" name="horario" value="indistinto" id="indistinto">Indistinto </label>
+                        <label><input type="radio" name="horario" value="sin-horario" id="sin-horario">No puedo en
+                            ninguno de esos horarios</label>
+                        <!--como hacer que si o si se seleccione una opcion?-->
+                    </div>
+                </div>
+                <div class="propuesta">
+                    <p>¿Que tipo de servicio/s buscas?</p>
+                    <div>
+                        <label><input type="checkbox" name="especificación" value="Diseño web" id="web">Diseño
+                            Web</label>
+                        <label><input type="checkbox" name="especificación" value="Diseño editorial"
+                                id="editorial">Diseño
+                            Editorial</label>
+                        <label><input type="checkbox" name="especificación" value="Branding"
+                                id="branding">Branding</label>
+                        <label><input type="checkbox" name="especificación" value="Re-diseño" id="rebranding">Re-diseño
+                            de marca</label>
+                        <label><input type="checkbox" name="especificación" value="Redes" id="redes">Diseño para
+                            redes</label>
+                        <label><input type="checkbox" name="especificación" value="Fotografia" id="foto">Retoque
+                            fotográfico</label>
+                    </div>
+                </div>
+                <div class="moodboard">
+                    <ul class="caja">
+                        <li class="mensaje">
+                            <label for="propuesta">Contame un poco más sobre que tu rubro/marca y qué es lo que buscas
+                                incorporar en
+                                la misma.</label>
+                            <textarea name="propuesta" id="mensaje" maxlength="1000"
+                                placeholder="Máx:800 carácteres"></textarea>
+                        </li>
+                        <li class="archivos-carga">
+                            <label for="referencias">Podes incluir un pdf con las ideas que tenes en mente</label>
+                            <input type="file" name="referencias">
+                            <!--como puedo limitar el peso y la cantidad de archivos (BUSCAR)-->
+                        </li>
+                    </ul>
+                </div>
+                <!--como se llaman estos en el CSS?-->
+                <div class="envio">
+                    <input type="submit" value="Borrar datos">
+                    <input type="submit" value="Enviar propuesta" formenctype="multipart/form-data">
+                </div>
+
+
+            </form>
+        </div>
+
+    </section>
+</body>
+
+</html>
