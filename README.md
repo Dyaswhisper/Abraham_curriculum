@@ -1,5 +1,5 @@
 Buenaas! bienvenidxs!
-Para este tp, se ha realizado la estructura de un CV mediante HTML5 y CSS. Solo incluí la información básica de mi perfil profesional, aproveche para comenzar a diseñar mi propia identidad visual sumando elementos interactivos para que se vean bien en la página y a su vez reforzar la identidad. y tambien me pase un poquito con la animaciones y el diseño para lograr un buen resultado, espero sea de su agrado!
+Ahora si ocn un poquito de explicacion, este es un tp que avanzo lento, refleja mucho lo que es mi personalidad y mi estilo de trabajo (lento pero seguro).
 
-Resolucion de pantalla utilizada: 1366x768
+Resolucion de pantalla utilizada: 1366x768 (entrega TP1) --> se actualizo a 1920x1080 (entrega TP3) el 29/10.
 Editor de código: Visual Studio Code.
