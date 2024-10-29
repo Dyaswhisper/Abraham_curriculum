@@ -20,7 +20,9 @@ body {
 
 /*Desde aca es Header*/
 header {
+    display: flex;
     position: fixed;
+    align-items: flex-start;
     width: 100%;
     background-color: black;
     padding: 10px;
@@ -267,4 +269,17 @@ textarea{
 .envio{
     display: flex;
     justify-content: space-between;
+}
+/* GALERIA */
+.galeria img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 0px;
+    margin-top: 1em;
+}
+.galeria{
+    background-color: blue;
+    columns: 3 120px;
+    column-gap: 1em;
+    padding: 3em;
 }
