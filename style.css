@@ -4,7 +4,6 @@
 
 /*Poppins*/
 * {
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,11 +19,8 @@ body {
 
 /*Desde aca es Header*/
 header {
-    display: flex;
     position: fixed;
-    align-items: flex-start;
     width: 100%;
-    justify-content: space-between;
     background-color: black;
     padding: 10px;
 }
@@ -48,6 +44,19 @@ header {
     color:blueviolet;
 }
 /*hasta aca es header*/
+
+/*Desde aca es footer*/
+
+footer {
+    display: flex;
+    justify-content:space-between ;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 10px;
+}
+/*hasta aca es footer*/
+
+/* INDEX */
 
 /*Desde aca es main*/
 
@@ -206,16 +215,6 @@ gap: 10px;
 .redes{
     gap: 100px;
 }
-/*Desde aca es footer*/
-
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    padding: 10px;
-}
-/*hasta aca es footer*/
 
 /**************************************************************************************************************/
 /* Desde aca los nuevos cambios*/
@@ -282,3 +281,6 @@ textarea{
 }
 /* FIN GALERIA */
 /* GALERIA */
+.slider a:hover{
+    transform: scale(o.5);
+}
