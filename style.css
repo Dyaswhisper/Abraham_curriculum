@@ -11,7 +11,7 @@
     text-decoration: none;
     list-style: none;
     cursor: url(img/iconos/Recurso\ 25.png), auto
-        /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
+    /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
 }
 
 body {
@@ -24,6 +24,7 @@ header {
     position: fixed;
     align-items: flex-start;
     width: 100%;
+    justify-content: space-between;
     background-color: black;
     padding: 10px;
 }
@@ -249,10 +250,6 @@ form{
     flex-direction: column;
 }
 
-.caja{
-
-}
-
 .mensaje{
     display: flex;
     flex-direction: column;
@@ -279,7 +276,9 @@ textarea{
 }
 .galeria{
     background-color: blue;
-    columns: 3 120px;
+    columns: 5 30px;
     column-gap: 1em;
     padding: 3em;
 }
+/* FIN GALERIA */
+/* GALERIA */
