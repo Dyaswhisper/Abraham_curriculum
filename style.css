@@ -9,7 +9,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    cursor: url(img/iconos/Recurso\ 25.png), auto
+    cursor: url(img/), auto
     /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
 }
 
