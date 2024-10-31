@@ -10,12 +10,13 @@
     text-decoration: none;
     list-style: none;
     cursor: url(img/), auto
-    /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
+        /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
 }
 
 body {
     font-family: "poppins", sans-serif;
 }
+/* GENERAL */
 
 /*Desde aca es Header*/
 header {
@@ -41,7 +42,7 @@ header {
 
 .botonera a:hover {
     background-color: rgb(255, 255, 255);
-    color:blueviolet;
+    color: blueviolet; /*cambiar colores*/
 }
 /*hasta aca es header*/
 
@@ -49,30 +50,33 @@ header {
 
 footer {
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     background-color: rgb(0, 0, 0);
     color: aliceblue;
     padding: 10px;
 }
-/*hasta aca es footer*/
 
+/*hasta aca es footer*/
+/* FIN GENERAL */
 /* INDEX */
 
 /*Desde aca es main*/
 
 section[id] {
     height: 100vh;
-    padding: 50px;
+    padding: 30px;
 }
-h3{
+
+h3 {
     font-size: 40px;
 }
+
 /*Desde aca es bienvenida*/
 #bienvenidos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-/*parece que no hace nada en inspector pero evita que el contenido choque con el header*/
+    /*parece que no hace nada en inspector pero evita que el contenido choque con el header*/
     align-items: center;
     font-size: 25px;
 }
@@ -82,10 +86,11 @@ h1 {
     text-decoration: solid;
 }
 
-#bienvenidos h2{
-font-size: 220px;
-color: blueviolet;
+#bienvenidos h2 {
+    font-size: 220px;
+    color: blueviolet;
 }
+
 /*hasta aca es bienvenida*/
 /*Desde aca es sobre mi*/
 #sobremi {
@@ -103,12 +108,15 @@ color: blueviolet;
     align-items: center;
     gap: 50px;
 }
-#sobremi img{
-    border-radius:80px 0;
+
+#sobremi img {
+    border-radius: 80px 0;
 }
-#sobremi p{
+
+#sobremi p {
     max-width: 400px;
 }
+
 /*hasta aca es sobre mi*/
 /*Desde aca es formación*/
 #formacion {
@@ -126,9 +134,11 @@ color: blueviolet;
     gap: 35px;
     word-wrap: break-word;
 }
-.educacion li{
+
+.educacion li {
     max-width: 250px;
 }
+
 /*hasta aca es formación*/
 /*Desde aca es experiencia*/
 #aptitudes {
@@ -138,6 +148,7 @@ color: blueviolet;
     justify-content: center;
     gap: 50px;
 }
+
 .academica {
     max-width: 550px;
     display: flex;
@@ -146,7 +157,7 @@ color: blueviolet;
     gap: 30px;
 }
 
-.separador{
+.separador {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -171,30 +182,36 @@ color: blueviolet;
     align-items: center;
     justify-content: center;
 }
-#proyectos h3, #proyectos p, #proyectos h4{
+
+#proyectos h3,
+#proyectos p,
+#proyectos h4 {
     color: aliceblue;
 }
-.slider-images{
+
+.slider-images {
     display: flex;
     gap: 40px;
 }
-.slider{
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.slider-images img{
+.slider-images img {
     border-radius: 50px 0;
 }
-.slider-images img:hover{
+
+.slider-images img:hover {
     border-radius: 0;
     transform: scale(1.5);
 }
 
 /*Desde aca es contacto*/
-#links{
+#links {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,17 +219,20 @@ gap: 10px;
     gap: 40px;
 
 }
-#links h3{
+
+#links h3 {
     font-size: 100px;
     color: blueviolet;
 }
-.boton{
+
+.boton {
     background-color: blueviolet;
     padding: 20px;
     color: aliceblue;
     border-radius: 40px;
 }
-.redes{
+
+.redes {
     gap: 100px;
 }
 
@@ -220,67 +240,83 @@ gap: 10px;
 /* Desde aca los nuevos cambios*/
 
 /*FORMULARIO*/
-.formulario-contacto{
+.formulario-contacto {
     display: flex;
     color: blueviolet;
     gap: 50px;
     justify-content: center;
     align-items: center;
+    background-color: aqua;
+    height: 100vh;
 }
-form{
+
+form {
     max-width: 500px;
     height: auto;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 25px;
 }
-.datos-personales{
+
+.datos-personales {
     display: flex;
     flex-direction: column;
-    
+
 }
-.mmoodboard{
+
+.mmoodboard {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.reunion{
+
+.reunion {
     display: flex;
     flex-direction: column;
 }
 
-.mensaje{
+.mensaje {
     display: flex;
     flex-direction: column;
-    gap:10px
+    gap: 10px
 }
-.archivos-carga{
+
+.archivos-carga {
     display: flex;
     flex-direction: column;
 }
-textarea{
+
+textarea {
     padding: 10px;
     height: 200px;
 }
-.envio{
+
+.envio {
     display: flex;
     justify-content: space-between;
 }
+
 /* GALERIA */
-.galeria img{
+.galeria img {
     width: 100%;
     object-fit: cover;
     border-radius: 1em 0px;
     margin-top: 1em;
 }
-.galeria{
+
+.galeria {
     background-color: blue;
     columns: 5 30px;
     column-gap: 1em;
     padding: 3em;
 }
+
 /* FIN GALERIA */
 /* GALERIA */
-.slider a:hover{
+.slider a:hover {
     transform: scale(o.5);
 }
+
+/**/
+
+
