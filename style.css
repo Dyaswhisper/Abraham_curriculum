@@ -8,7 +8,6 @@
     text-decoration: none;
     list-style: none;
     cursor: url(img/general/cursor.png), auto
-        /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
 }
 
 /**************************************************************************************************************/
@@ -34,7 +33,6 @@ header {
     right: 0;
     width: 100%;
     background-color: #110132;
-    /*probar sustituir con background-image (animacion)*/
 }
 
 .botonera {
