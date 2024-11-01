@@ -348,6 +348,9 @@ textarea {
 
 /**************************************************************************************************************/
 /* SOBRE MI */
+.information{
+    height: 100vh;
+}
 .infodemi {
     display: flex;
     flex-direction: column;
@@ -356,7 +359,6 @@ textarea {
 
 .caja {
     display: flex;
-    max-width: 1200px;
     margin-top: 2em;
     align-items: center;
     gap: 2em;
@@ -366,6 +368,9 @@ textarea {
     border-radius: 6em 0;
 }
 
+.caja p {
+    max-width: 500px;
+}
 #aptitudes {
     display: flex;
     width: 100%;
