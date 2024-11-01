@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Playball&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 /*Poppins*/
 * {
     margin: 0;
@@ -9,270 +7,295 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    cursor: url(img/), auto
+    cursor: url(img/general/cursor.png), auto
         /* amo el cursor pero a nivel accesibilidad está complejo el uso porque es muy difícil dónde es que hay que hacer el click, con agregarle un triángulo en la esquina o un puntero a la misma img va a funcionar mucho mejor */
 }
 
+/**************************************************************************************************************/
+/* GENERAL */
 body {
     font-family: "poppins", sans-serif;
+    background-color: #110132;
+    color: #F8F8F8;
 }
-/* GENERAL */
 
-/*Desde aca es Header*/
+main {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* header */
 header {
     position: fixed;
+    top: 0;
+    right: 0;
     width: 100%;
-    background-color: black;
-    padding: 10px;
+    background-color: #110132;
+    /*probar sustituir con background-image (animacion)*/
 }
 
 .botonera {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    padding: 1em;
 }
 
-.botonera a {
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.botones a {
     padding: 20px;
-    color: rgb(255, 255, 255);
+    color: #F8F8F8;
     border-radius: 40px;
     font-size: 20px;
     transition: all 0.3s linear;
 }
 
-.botonera a:hover {
-    background-color: rgb(255, 255, 255);
-    color: blueviolet; /*cambiar colores*/
+.botones a:hover {
+    background-color: #F8F8F8;
+    color: #82368C;
 }
-/*hasta aca es header*/
-
-/*Desde aca es footer*/
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: rgb(0, 0, 0);
-    color: aliceblue;
+    color: #F8F8F8;
     padding: 10px;
 }
 
-/*hasta aca es footer*/
-/* FIN GENERAL */
+/**************************************************************************************************************/
 /* INDEX */
+/******** SECTION BIENVENIDA *********/
 
-/*Desde aca es main*/
-
-section[id] {
-    height: 100vh;
-    padding: 30px;
-}
-
-h3 {
-    font-size: 40px;
-}
-
-/*Desde aca es bienvenida*/
 #bienvenidos {
+    margin-top: 9em;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*parece que no hace nada en inspector pero evita que el contenido choque con el header*/
     align-items: center;
-    font-size: 25px;
-}
-
-h1 {
-    font-size: 50px;
-    text-decoration: solid;
+    color: #F8F8F8;
+    background-color: #2B0086;
+    border-radius: 0 12em;
 }
 
 #bienvenidos h2 {
-    font-size: 220px;
-    color: blueviolet;
-}
-
-/*hasta aca es bienvenida*/
-/*Desde aca es sobre mi*/
-#sobremi {
-    color: aliceblue;
+    color: #F8F8F8;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16em;
+}
+
+#bienvenidos h1 {
+    font-size: 4em;
+}
+
+#bienvenidos p {
+    font-size: 3em;
+}
+
+/******** SECTION GALERIA *********/
+#proyectos {
+    height: 100vh;
+    background-color: #8A2BE2;
+    border-radius: 12em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    gap: 30px;
 }
 
-.caja {
+#proyectos h3 {
+    font-size: 4em;
+    color: #F8F8F8;
+}
+
+#proyectos ul {
     display: flex;
+    gap: 80px;
     align-items: center;
-    gap: 50px;
 }
 
-#sobremi img {
-    border-radius: 80px 0;
+#proyectos img {
+    border-radius: 50px 0;
 }
 
-#sobremi p {
-    max-width: 400px;
-}
+/******** SECTION CONTACTO *********/
 
-/*hasta aca es sobre mi*/
-/*Desde aca es formación*/
-#formacion {
-    color: aliceblue;
+#caja-redes {
+    background-color: #2B0086;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: blueviolet;
-    gap: 50px;
-}
-
-.educacion {
-    display: flex;
-    gap: 35px;
-    word-wrap: break-word;
-}
-
-.educacion li {
-    max-width: 250px;
-}
-
-/*hasta aca es formación*/
-/*Desde aca es experiencia*/
-#aptitudes {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    border-radius: 0 10em;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+#caja-redes h3 {
+    color: #F8F8F8;
+    font-size: 6em;
+}
+
+.redes {
+    display: flex;
+    gap: 2em;
+}
+
+.boton {
+    padding: 1em;
+    background-color: #110132;
+    color: #F8F8F8;
+    border-radius: 2em;
+    font-size: 1.3em;
+}
+
+.boton:hover {
+    padding: 1em;
+    border-radius: 2em;
+    transform: scale(1.5);
+}
+
+/**************************************************************************************************************/
+/* FORMULARIO */
+
+.formulario-contacto {
+    margin-top: 6em;
+    max-width: 900px;
+    display: flex;
+    color: #F8F8F8;
+    gap: 5em;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    height: 100vh;
 }
 
-.academica {
-    max-width: 550px;
+.formulario-contacto li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+}
+
+.formulario-contacto p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .separador {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 50px;
+    gap: 1em;
 }
 
-.programas {
-    display: flex;
-    gap: 20px;
-    max-width: 700px;
+input {
+    padding: 0.5em;
+    border-radius: 30em;
 }
 
-/*Desde aca es proyectos*/
-#proyectos {
-    width: 100%;
-    height: 100vh;
-    padding: 60px;
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-#proyectos h3,
-#proyectos p,
-#proyectos h4 {
-    color: aliceblue;
-}
-
-.slider-images {
-    display: flex;
-    gap: 40px;
-}
-
-.slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.slider-images img {
-    border-radius: 50px 0;
-}
-
-.slider-images img:hover {
-    border-radius: 0;
-    transform: scale(1.5);
-}
-
-/*Desde aca es contacto*/
-#links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-
-}
-
-#links h3 {
-    font-size: 100px;
-    color: blueviolet;
-}
-
-.boton {
-    background-color: blueviolet;
-    padding: 20px;
-    color: aliceblue;
-    border-radius: 40px;
-}
-
-.redes {
-    gap: 100px;
-}
-
-/**************************************************************************************************************/
-/* Desde aca los nuevos cambios*/
-
-/*FORMULARIO*/
-.formulario-contacto {
-    display: flex;
-    color: blueviolet;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
-    height: 100vh;
+label {
+    font-size: 0.8em;
 }
 
 form {
-    max-width: 500px;
-    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    background-color: #82368C;
+    padding: 40px;
+    border-radius: 50px 0;
+    width: 35em;
+    gap: 0.8em;
 }
 
 .datos-personales {
     display: flex;
     flex-direction: column;
-
+    gap: 1em;
 }
 
-.mmoodboard {
+.datos {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1em;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.codigo input {
+    display: flex;
+    flex-direction: column;
+    width: 6em;
+}
+
+.numero {
+    width: 100%;
 }
 
 .reunion {
     display: flex;
     flex-direction: column;
+    gap: 1em;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+}
+
+.agenda input {
+    width: 100%;
+}
+
+.disponibilidad {
+    display: flex;
+    justify-content: space-around;
+}
+
+.disponibilidad li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.propuesta {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.casillas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cadena {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadena label {
+    display: flex;
+    gap: 0.4em;
 }
 
 .mensaje {
@@ -287,16 +310,28 @@ form {
 }
 
 textarea {
-    padding: 10px;
-    height: 200px;
+    padding: 1.1em;
+    border-radius: 2em;
+    height: 8em;
 }
 
+/*BOTONES DE ENVIO Y BORRAR*/
 .envio {
     display: flex;
     justify-content: space-between;
 }
 
+.envio input {
+    color: #F8F8F8;
+    background-color: #2B0086;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/**************************************************************************************************************/
 /* GALERIA */
+
 .galeria img {
     width: 100%;
     object-fit: cover;
@@ -305,18 +340,87 @@ textarea {
 }
 
 .galeria {
-    background-color: blue;
+    margin-top: 3em;
     columns: 5 30px;
     column-gap: 1em;
     padding: 3em;
 }
 
-/* FIN GALERIA */
-/* GALERIA */
-.slider a:hover {
-    transform: scale(o.5);
+/**************************************************************************************************************/
+/* SOBRE MI */
+.infodemi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/**/
+.caja {
+    display: flex;
+    max-width: 1200px;
+    margin-top: 2em;
+    align-items: center;
+    gap: 2em;
+}
 
+.caja img {
+    border-radius: 6em 0;
+}
 
+#aptitudes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+    padding: 3em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.academica {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 500px;
+}
+
+.academica ul {
+    display: flex;
+    gap: 3em;
+}
+
+/**************************************************************************************************************/
+/* EDUCACION */
+
+.formacion-academica {
+    margin-top: 9em;
+    height: 100vh;
+}
+
+.escuela {
+    background-color: #8A2BE2;
+    border-radius: 0 6em;
+    ;
+    display: flex;
+    gap: 2em;
+    padding: 3em;
+    max-width: 800px;
+    align-items: center;
+}
+
+.columnas {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.formacion-academica ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
